@@ -2,9 +2,9 @@
   "name": "kids-education-entertainment",
   "version": "1.0.0",
   "description": "This is a site built for Kids educational purpose",
-  "main": "index.html",
+  "main": "index.php",
   "scripts": {
-    "start": "npm run lite",
+    "start": "npm start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server"
   },
