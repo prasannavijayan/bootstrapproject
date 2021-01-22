@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
+    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <!-- endbuild -->
+    
+
+    <title>Education & Entertainment</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-sm fixed-top topnavbar">
+        <div class="container">
+            <a class="navbar-brand mr-auto" href="#">
+                <img src="images/logos.png" height="30" width="45">&nbsp;&nbsp;Education & Entertainment </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home">Home</span> </a></li>
+                    <li class="nav-item"><a class="nav-link" href="worksheet.html"><span class="fa fa-tasks">Worksheets</span> </a></li>
+                    <li class="nav-item"><a class="nav-link" href="story-books.html"><span class="fa fa-book">Story Book</span> </a></li>
+                    <li class="nav-item"><a class="nav-link" href="songs.html"><span class="fa fa-toggle-right">Songs</span> </a></li>
+
+                </ul>  
+                <span class="navbar-text ml-0"> <a id="loginButton">
+                    <span class="fa fa-sign-in">Login</span> </a>
+                </span>
+                &nbsp;
+                &nbsp;
+                <span class="navbar-text ml-2"> <a id="SignupButton">
+                    <span class="fa fa-user-plus">Signup</span></a>
+                </span>
+                
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+     <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-6 offset-sm-3">
+                                    <label for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-sm-6 offset-sm-3">
+                                <label for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="col-sm-6 offset-sm-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-6 offset-sm-3">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>  
+                            </div>      
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Signup </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-6 offset-sm-3">
+                                    <label for="exampleInputFirstname">Firstname</label>
+                                    <input type="email" class="form-control form-control-sm" id="exampleInputFirstname" placeholder="Enter Firstname">
+                            </div>
+                            <div class="form-group col-sm-6 offset-sm-3">
+                                    <label for="exampleInputLastname">Lastname</label>
+                                    <input type="email" class="form-control form-control-sm" id="exampleInputLastname" placeholder="Enter Lastname">
+                            </div>
+                            <div class="form-group col-sm-6 offset-sm-3">
+                                    <label for="exampleInputEmail3">Email Address</label>
+                                    <input type="email" class="form-control form-control-sm" id="exampleInputEmail" placeholder="Enter Email address">
+                            </div>
+                            <div class="form-group col-sm-6 offset-sm-3">
+                                <label for="exampleInputPassword">Password</label>
+                                <input type="password" class="form-control form-control-sm" id="exampleInputPassword" placeholder="Password">
+                            </div>
+                            <div class="form-group col-sm-6 offset-sm-3">
+                                <label for="exampleInputConfirmpassword">Confirm Password</label>
+                                <input type="password" class="form-control form-control-sm" id="exampleInputConfirmpassword" placeholder="Confirm password">
+                            </div>
+                                <div class="col-12 col-sm-6 offset-sm-3">
+                                    <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary btn-sm ml-1">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 order-last">
+                    <img src="images/jumbotron.png" class="img-circle" width="100%" height="100%">
+                </div>
+                <div class="col-12 col-sm-6 order-first">
+                    <p><h4>The Best Start in life for every Child </h4>
+                        <h3> Learning</h3>
+                    
+                    <span>By three methods we may learn wisdom: First, by reflection, which is noblest; Second, by imitation, which is easiest; and third by experience, which is the bitterest.’ –Confucius
+
+                    </span>
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-12 col-sm">
+                    <strong><h4 class="text-center">Our Learning Library</h4></strong>
+                       <p class="text-center section"> With few digital and printable resources, kids can learn about any topic they’re curious about.
+
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <div class="card">
+                        <div class="card-head">
+                            <strong><h4 class="text-center"><i class="fa fa-book">Lessons Plans</i></h4></strong>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-center section">Our ready-made lesson plans make it easy for classroom educators and homeschoolers to provide meaningful instruction to students.</p>
+                        </div>
+                    </div>
+                </div><br>
+            <div class="col-12 col-sm-6">
+                <div class="card">
+                    <div class="card-head">
+                        <strong><h4 class="text-center"><i class="fa fa-scissors">Activities</i></h4></strong>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-center section">Get hands-on with learning! Our expert-designed activities bring hundreds of topics to life through science experiments, engaging writing prompts, creative art projects, and more.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+<br><br>
+        <div class="row">
+                <div class="col-12 col-sm-6">
+                    <div class="card">
+                        <div class="card-head">
+                         <strong><h4 class="text-center"><i class="fa fa-gamepad">Games</i></h4></strong>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-center section">We’ve got educational games galore: Sharpen math skills with Addition Pizza Party, learn letters with Alphabet Cloud Catcher, and transform study time into an adventure every day!</p>
+                        </div>
+                    </div>
+                </div><br>
+            <div class="col-12 col-sm-6">
+                <div class="card">
+                    <div class="card-head">
+                        <strong><h4 class="text-center"><i class="fa fa-pencil-square-o">Worksheets</i></h4></strong>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-center section">What does your student want to learn? We’ve got a worksheet for that! Our printables are a fun and easy way to learn about multiplication, sight words, animal life cycles, and much more!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="row image-position">
+            <img  src="images/about.jpg" alt="Aboutus" width="100%">
+                <div class="text-image">
+                    <h4><i class="fa fa-info"> Heading</i></h4>
+                    <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+                </div>
+            
+        </div>
+    </div>
+</header>
+
+<footer class="page-footer bg-dark">
+
+    <div class="bg-success">
+        <div class="container">
+            <div class="row py-4 d-flex align-items-center">
+
+                <div class="col-md-12 text-center">
+                    <a href="#"><i class="fa fa-facebook-square text-white mr-4"></i></a>
+                    <a href="#"><i class="fa fa-google-plus text-white mr-4"></i></a>
+                    <a href="#"><i class="fa fa-twitter text-white mr-4"></i></a>
+                    <a href="#"><i class="fa fa-linkedin text-white mr-4"></i></a>
+                    <a href="#"><i class="fa fa-instagram text-white mr-4"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center text-white text-md-left mt-5">
+        <div class="row">
+
+            <div class="col-md-3 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">Education & Entertainment</h6>
+                <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width:175px; height:2px;">
+                <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+            </div>
+
+            <div class="col-md-3 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">Subjects</h6>
+                <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 85px; height:2px;">
+
+                <ul class="list-unstyled">
+                    <li class="my-2">Science</li>
+                    <li class="my-2">Phonetics</li>
+                    <li class="my-2">Maths</li>
+                    <li class="my-2">Rhymes</li>
+                </ul>
+
+            </div>
+
+            <div class="col-md-3 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">Contacts</h6>
+                <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 75px; height:2px;">
+
+                <ul class="list-unstyled text-white">
+                    <li class="my-2"><i class="fa fa-home"></i> lorem, Ave 23 ipsum</li>
+                    <li class="my-2"><i class="fa fa-envelope"></i> eduentu@gmail.com</li>
+                    <li class="my-2"><i class="fa fa-phone"></i> +19807649873</li>
+                    <li class="my-2"><i class="fa fa-print"></i> +80123456789</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright text-center text-white py-3">
+        <p>&copy; Copyright
+            <a href="#">theeduentu.com</a></p>
+            <p> Designed By Developers</p>
+    </div>
+</footer>
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+
+</body>
+</html>
+
+
+
+    

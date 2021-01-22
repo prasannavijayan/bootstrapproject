@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
+    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <!-- endbuild -->
+
+    <title>Education & Entertainment</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-sm fixed-top topnavbar">
+        <div class="container">
+            <a class="navbar-brand mr-auto" href="index.html">
+                <img src="images/logos.png" height="30" width="45">&nbsp;&nbsp;Education & Entertainment </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="index.html"><span class="fa fa-home">Home</span> </a></li>
+                    <li class="nav-item"><a class="nav-link" href="worksheet.html"><span class="fa fa-tasks">Worksheets</span> </a></li>
+                    <li class="nav-item"><a class="nav-link" href="story-books.html"><span class="fa fa-book">Story Book</span> </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-toggle-right">Songs</span> </a></li>
+
+                </ul>  
+                <span class="navbar-text ml-0"> <a id="loginButton">
+                    <span class="fa fa-sign-in">Login</span> </a>
+                </span>
+                &nbsp;
+                &nbsp;
+                <span class="navbar-text ml-2"> <a id="SignupButton">
+                    <span class="fa fa-user-plus">Signup</span></a>
+                </span>
+                
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+     <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-6 offset-sm-3">
+                                    <label for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-sm-6 offset-sm-3">
+                                <label for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="col-sm-6 offset-sm-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-6 offset-sm-3">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>  
+                            </div>      
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Signup </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-6 offset-sm-3">
+                                    <label for="exampleInputFirstname">Firstname</label>
+                                    <input type="email" class="form-control form-control-sm" id="exampleInputFirstname" placeholder="Enter Firstname">
+                            </div>
+                            <div class="form-group col-sm-6 offset-sm-3">
+                                    <label for="exampleInputLastname">Lastname</label>
+                                    <input type="email" class="form-control form-control-sm" id="exampleInputLastname" placeholder="Enter Lastname">
+                            </div>
+                            <div class="form-group col-sm-6 offset-sm-3">
+                                    <label for="exampleInputEmail3">Email Address</label>
+                                    <input type="email" class="form-control form-control-sm" id="exampleInputEmail" placeholder="Enter Email address">
+                            </div>
+                            <div class="form-group col-sm-6 offset-sm-3">
+                                <label for="exampleInputPassword">Password</label>
+                                <input type="password" class="form-control form-control-sm" id="exampleInputPassword" placeholder="Password">
+                            </div>
+                            <div class="form-group col-sm-6 offset-sm-3">
+                                <label for="exampleInputConfirmpassword">Confirm Password</label>
+                                <input type="password" class="form-control form-control-sm" id="exampleInputConfirmpassword" placeholder="Confirm password">
+                            </div>
+                                <div class="col-12 col-sm-6 offset-sm-3">
+                                    <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary btn-sm ml-1">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div class="wrapper">
+    
+ <nav id="sidebar">
+    
+     <div class="sidebar-header">
+        <h3>Entertainment Area </h3>
+     </div>
+     <ul class="lisst-unstyled components">
+        <li class="active">
+            <a href="#" data-toggle="collapse" aria-expanded="false" data-target="#Activity-songs">Activity Songs</a>
+        </li>
+        <li>
+            <a href="#" data-toggle="collapse" data-target="#alpha-numeric">Alphabets&Number songs</a>
+        </li>
+        <li>
+            <a href="#" data-toggle="collapse" data-target="#disney">Disney Songs</a>
+        </li>
+        <li>
+            <a href="#" data-toggle="collapse" data-target="#nursery">Nursery Rhymes</a>
+        </li>
+        <li>
+            <a href="#" data-toggle="collapse" data-target="#lullaby">Lullaby</a>
+        </li>
+     </ul>
+ </nav>
+
+    <div id="content">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn  btn-info btn-sm">
+            <i class="fa fa-align-left"></i>
+            <span></span></button>
+        </div>
+      </nav>
+
+        <div id="accordion">
+            <div data-parent="#accordion" class="collapse show" id="Activity-songs">
+                <table>
+                    <th><h4 class=""> EXERCISE TIME </h4> </th>
+                    <tr>
+                        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/5if4cjO5nxo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+                        <td><p>Source: <a href="https://www.youtube.com/watch?v=5if4cjO5nxo" target="_blank" rel="nofollow">Aerobics Dance Workout</a><br>Youtube Channel: <a href="https://www.youtube.com/user/popsugartvfit" target="_blank"> </p></td>
+                    </tr>
+
+                     <tr>
+                        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/wheGAwTdrak" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+                        <td><p>Source: <a href="https://www.youtube.com/watch?v=wheGAwTdrak" target="_blank" rel="nofollow">Zumba Workout </a><br>Youtube Channel: <a href="https://www.youtube.com/channel/UCbNQRZChXeJo5Lx11D0KmAg" target="_blank">THE INNER STUDIO</p></td>
+                    </tr>
+
+                    <tr>
+                        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/VD2amYsbCtc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+                        <td><p>Source: <a href="https://www.youtube.com/watch?v=VD2amYsbCtc" target="_blank" rel="nofollow">Cardio Workout For kids </a><br>Youtube Channel: <a href="https://www.youtube.com/channel/UCbNQRZChXeJo5Lx11D0KmAg" target="_blank">THE INNER STUDIO</p></td>
+                    </tr>
+
+                     
+                     <tr>
+                        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/Qgq8nZqYNmE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+                        <td><p>Source: <a href="https://www.youtube.com/watch?v=Qgq8nZqYNmE" target="_blank" rel="nofollow">Debbie Doo and Friends! - Let's Star Jump! - Dance Song For Children</a><br>Youtube Channel: <a href="https://www.youtube.com/channel/UCMyyXCurk6jXXOWt2eKyCgg" target="_blank">Debbie Doo Kids TV</p></td>
+                    </tr>
+
+                </table>
+            </div>
+
+                <div data-parent="#accordion" class="collapse" id="alpha-numeric">
+                <table>
+                    <th> <h4> Alphabets and Number Songs </h4> </th>
+                    <tr>
+                        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/Vg6aHPMXDVU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+                        <td><p>Source: <a href="https://www.youtube.com/watch?v=Vg6aHPMXDVU" target="_blank" rel="nofollow">Alphabet train songs</a><br>Youtube Channel: <a href="https://www.youtube.com/channel/UCJkWoS4RsldA1coEIot5yDA" target="_blank"> Mother Goose Club</p></td>
+                    </tr>
+
+                     <tr>
+                        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/JhVAHfKm9Fw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+                        <td><p>Source: <a href="https://www.youtube.com/watch?v=JhVAHfKm9Fw" target="_blank" rel="nofollow"> Alphabet Rap </a><br>Youtube Channel: <a href="https://www.youtube.com/channel/UCJkWoS4RsldA1coEIot5yDA" target="_blank"> Mother Goose Club</p></td>
+                    </tr>
+
+                    <tr>
+                        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/7D4K9oi7oBM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+                        <td><p>Source: <a href="https://www.youtube.com/watch?v=7D4K9oi7oBM" target="_blank" rel="nofollow">Top 10 Counting Songs</a><br>Youtube Channel: <a href="https://www.youtube.com/user/SuperSimpleSongs" target="_blank">Super Simple Songs</p></td>
+                    </tr>
+
+                     
+                     <tr>
+                        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/EbgwPx6mYu4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+                        <td><p>Source: <a href="https://www.youtube.com/watch?v=EbgwPx6mYu4" target="_blank" rel="nofollow">Count 1 to 20 </a><br>Youtube Channel: <a href="https://www.youtube.com/user/SmartBooksMedia" target="_blank">Pinkfong! Kids' Songs & Stories </p></td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div data-parent="#accordion" class="collapse" id="disney">
+                <table>
+                    <th> <h4> DISNEY SONGS </h4> </th>
+                    <tr>
+                        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/3VikHoPxvyM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+                        <td><p>Source: <a href="https://www.youtube.com/watch?v=3VikHoPxvyM" target="_blank" rel="nofollow">Frozen 2</a><br>Youtube Channel: <a href="https://www.youtube.com/channel/UCFks_UAxc9zdWHAE75eWDDA" target="_blank"> Disney Music</p></td>
+                    </tr>
+
+                     <tr>
+                        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/7ybhiu0cWOc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+                        <td><p>Source: <a href="https://www.youtube.com/watch?v=7ybhiu0cWOc" target="_blank" rel="nofollow">Tangled </a><br>Youtube Channel: <a href="https://www.youtube.com/channel/UCYJU4ZsNTH030SNRUR3TFwA" target="_blank"> TP Tayo</p></td>
+                    </tr>
+
+                    <tr>
+                        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/KkBZRnBaBV0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+                        <td><p>Source: <a href="https://www.youtube.com/watch?v=KkBZRnBaBV0" target="_blank" rel="nofollow">Top 30 Disney Songs</a><br>Youtube Channel: <a href="https://www.youtube.com/user/piotr291092" target="_blank">Piotr Wojtyniak</p></td>
+                    </tr>
+
+                     
+                     <tr>
+                        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/bcTQzQFwTrc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+                        <td><p>Source: <a href="https://www.youtube.com/watch?v=bcTQzQFwTrc" target="_blank" rel="nofollow">Best Animated Movie songs</a><br>Youtube Channel: <a href="https://www.youtube.com/channel/UCdhSqMwx2hP_BBBM-FS5fcg" target="_blank">SHIP IT! Sama</p></td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div data-parent="#accordion" class="collapse" id="nursery">
+                <table>
+                    <th> <h4>NUSERY RHYMES</h4> </th>
+                    <tr>
+                        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/HP-MbfHFUqs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+                        <td><p>Source: <a href="https://www.youtube.com/watch?v=HP-MbfHFUqs&t=2663s" target="_blank" rel="nofollow">Wheels on the bus</a><br>Youtube Channel: <a href="https://www.youtube.com/user/LittleBabyBum" target="_blank"> Little Baby Bum</p></td>
+                    </tr>
+
+                     <tr>
+                        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/BetC5kA_F80" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+                        <td><p>Source: <a href="https://www.youtube.com/watch?v=BetC5kA_F80" target="_blank" rel="nofollow">Rain Rain Go Away + More Nursery Rhymes & Kids Songs - CoComelon</a><br>Youtube Channel: <a href="https://www.youtube.com/user/checkgate" target="_blank">COCO MELON - Nursery Rhymes</p></td>
+                    </tr>
+
+                    <tr>
+                        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/CbnDY1ufZUg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+                        <td><p>Source: <a href="https://www.youtube.com/watch?v=CbnDY1ufZUg" target="_blank" rel="nofollow">Collection of Rhymes</a><br>Youtube Channel: <a href="https://www.youtube.com/channel/UC6zhI71atP7YLoZyIyCIGNw" target="_blank">Dave & Ava - Nursery Rhymes and Baby Songs</p></td>
+                    </tr>
+
+                     
+                     <tr>
+                        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/2DL703qra9k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+                        <td><p>Source: <a href="https://www.youtube.com/watch?v=2DL703qra9k" target="_blank" rel="nofollow">Christmas Song collection</a><br>Youtube Channel: <a href="https://www.youtube.com/channel/UC6zhI71atP7YLoZyIyCIGNw" target="_blank">Dave & Ava - Nursery Rhymes and Baby Songs</p></td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div data-parent="#accordion" class="collapse" id="lullaby">
+                <table>
+                    <th> <h4> LULLABY </h4></th>
+                    <tr>
+                        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/TqfMHH67KJA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+                        <td><p>Source: <a href="https://www.youtube.com/watch?v=TqfMHH67KJA" target="_blank" rel="nofollow">Sweet Dreams + More | Nursery Rhymes & Lullabies</a><br>Youtube Channel: <a href="https://www.youtube.com/user/SuperSimpleSongs" target="_blank">Super Simple Songs</p></td>
+                    </tr>
+
+                     <tr>
+                        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/W-vBu2rf8TI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+                        <td><p>Source: <a href="https://www.youtube.com/watch?v=W-vBu2rf8TI&t=1201s" target="_blank" rel="nofollow">2 Hours Super Relaxing Baby Music ♥♥♥ Bedtime Lullaby For Sweet Dreams ♫♫♫ Sleep Music</a><br>Youtube Channel: <a href="https://www.youtube.com/channel/UC7rAIHCpHY0t14aSd22qPQw" target="_blank">Wonderful lullabies</p></td>
+                    </tr>
+
+                    <tr>
+                        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/7Wn2lXesI9U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+                        <td><p>Source: <a href="https://www.youtube.com/watch?v=7Wn2lXesI9U" target="_blank" rel="nofollow">30 Minutes Soft Relaxing Baby Sleep Music Collection ♥ Brahms Mozart Beethoven Lullaby ♫ Good Night</a><br>Youtube Channel: <a href="https://www.youtube.com/channel/UC7rAIHCpHY0t14aSd22qPQw" target="_blank">Wonderful lullabies</p></td>
+                    </tr>
+
+                     
+                     <tr>
+                        <td><iframe width="560" height="315" src="https://www.youtube.com/embed/Vhwq_uAPPXY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+                        <td><p>Source: <a href="https://www.youtube.com/watch?v=Vhwq_uAPPXY" target="_blank" rel="nofollow">Twinkle, Twinkle, Little Star - Great Songs for Children | LooLoo Kids</a><br>Youtube Channel: <a href="https://www.youtube.com/user/LooLooKids" target="_blank">LooLoo Kids - Nursery Rhymes and Children's Songs </p></td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="page-footer bg-dark">
+
+    <div class="bg-success">
+        <div class="container">
+            <div class="row py-4 d-flex align-items-center">
+
+                <div class="col-md-12 text-center">
+                    <a href="#"><i class="fa fa-facebook-square text-white mr-4"></i></a>
+                    <a href="#"><i class="fa fa-google-plus text-white mr-4"></i></a>
+                    <a href="#"><i class="fa fa-twitter text-white mr-4"></i></a>
+                    <a href="#"><i class="fa fa-linkedin text-white mr-4"></i></a>
+                    <a href="#"><i class="fa fa-instagram text-white mr-4"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center text-white text-md-left mt-5">
+        <div class="row">
+
+            <div class="col-md-3 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">Education & Entertainment</h6>
+                <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width:175px; height:2px;">
+                <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+            </div>
+
+            <div class="col-md-3 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">Subjects</h6>
+                <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 85px; height:2px;">
+
+                <ul class="list-unstyled">
+                    <li class="my-2">Science</li>
+                    <li class="my-2">Phonetics</li>
+                    <li class="my-2">Maths</li>
+                    <li class="my-2">Rhymes</li>
+                </ul>
+
+            </div>
+
+            <div class="col-md-3 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">Contacts</h6>
+                <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 75px; height:2px;">
+
+                <ul class="list-unstyled text-white">
+                    <li class="my-2"><i class="fa fa-home"></i> lorem, Ave 23 ipsum</li>
+                    <li class="my-2"><i class="fa fa-envelope"></i> eduentu@gmail.com</li>
+                    <li class="my-2"><i class="fa fa-phone"></i> +19807649873</li>
+                    <li class="my-2"><i class="fa fa-print"></i> +80123456789</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright text-center text-white py-3">
+        <p>&copy; Copyright
+            <a href="#">theeduentu.com</a></p>
+            <p> Designed By Developers</p>
+    </div>
+</footer>
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

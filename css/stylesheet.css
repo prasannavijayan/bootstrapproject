@@ -1,0 +1,131 @@
+.jumbotron{
+	  padding: 70px 30px 70px 30px;
+    margin: 0px auto;
+    color:black;
+    border-image-width: 100%;
+    border-image: 100%;
+    background: #fff;
+}
+.jumbotron h3{
+  font-style: bold;
+  font-size: 7.5em;
+}
+.jumbotron .img-circle{
+  border-radius: 50%;
+}
+.jumbotron span{
+  font-style: italic;
+  font-size: 1.5em;
+  color: skyblue;
+}
+
+
+.topnavbar{
+            background-color:#5f6f2e;
+}
+.footer-copyright{
+  background: black;
+}
+
+
+body {
+  margin: 0;
+  padding: 50px 0px 0px 0px;
+  z-index:0;
+}
+
+
+.modal-header {
+	background-color: #5f6f2e;
+}
+.jumbotron .image-position{
+   margin: 3%; 
+    position: relative; 
+  }
+.text-image{
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
+.text-center{
+	font-style: italic;
+	font-family: verdana;
+	font-weight: 100;
+}
+.card-head{
+  color: #1874cd;
+}
+
+/* Side Bar*/
+
+
+
+#sidebar.active {
+    margin-left: -250px;
+}
+.wrapper{
+  display: flex;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+#sidebar{
+  min-width: 250px;
+  max-width: 250px;
+  background: #7386D5;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+
+#sidebar .sidebar-header{
+  padding: 20px;
+  background: #6d7fcc;
+}
+#sidebar ul.components{
+  padding: 20px 0;
+  border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul li a{
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+  color: floralwhite;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+  color: #fff;
+  background: #6d7fcc;
+}
+
+a[data-toggle="collapse"]{
+  position: relative;
+}
+
+.dropdown-toggle::after{
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  transform: translateY(-50%);
+}
+ul ul a{
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: #6d7fcc;
+}
+
+#content{
+  width: 100%;
+  padding: 20px;
+  min-height: 100vh;
+  transition: all 0.3s;
+}
+
+

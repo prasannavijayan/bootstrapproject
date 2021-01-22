@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
+    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <!-- endbuild -->
+    <title>Education & Entertainment</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-sm fixed-top topnavbar">
+        <div class="container">
+            <a class="navbar-brand mr-auto" href="index.html">
+                <img src="images/logos.png" height="30" width="45">Education & Entertainment </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="index.html"><span class="fa fa-home">Home</span> </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-tasks">Worksheets</span> </a></li>
+                    <li class="nav-item"><a class="nav-link" href="story-books.html"><span class="fa fa-book">Story Book</span> </a></li>
+                    <li class="nav-item"><a class="nav-link" href="songs.html"><span class="fa fa-toggle-right">Songs</span> </a></li>
+
+                </ul>  
+                <span class="navbar-text ml-0"> <a id="loginButton">
+                    <span class="fa fa-sign-in">Login</span> </a>
+                </span>
+                
+                <span class="navbar-text ml-2"> <a id="SignupButton">
+                    <span class="fa fa-user-plus">Signup</span></a>
+                </span>
+                
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+     <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-6 offset-sm-3">
+                                    <label for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-sm-6 offset-sm-3">
+                                <label for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="col-sm-6 offset-sm-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-6 offset-sm-3">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>  
+                            </div>      
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Signup </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-6 offset-sm-3">
+                                    <label for="exampleInputFirstname">Firstname</label>
+                                    <input type="email" class="form-control form-control-sm" id="exampleInputFirstname" placeholder="Enter Firstname">
+                            </div>
+                            <div class="form-group col-sm-6 offset-sm-3">
+                                    <label for="exampleInputLastname">Lastname</label>
+                                    <input type="email" class="form-control form-control-sm" id="exampleInputLastname" placeholder="Enter Lastname">
+                            </div>
+                            <div class="form-group col-sm-6 offset-sm-3">
+                                    <label for="exampleInputEmail3">Email Address</label>
+                                    <input type="email" class="form-control form-control-sm" id="exampleInputEmail" placeholder="Enter Email address">
+                            </div>
+                            <div class="form-group col-sm-6 offset-sm-3">
+                                <label for="exampleInputPassword">Password</label>
+                                <input type="password" class="form-control form-control-sm" id="exampleInputPassword" placeholder="Password">
+                            </div>
+                            <div class="form-group col-sm-6 offset-sm-3">
+                                <label for="exampleInputConfirmpassword">Confirm Password</label>
+                                <input type="password" class="form-control form-control-sm" id="exampleInputConfirmpassword" placeholder="Confirm password">
+                            </div>
+                                <div class="col-12 col-sm-6 offset-sm-3">
+                                    <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary btn-sm ml-1">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<div class="wrapper">
+    
+ <nav id="sidebar">
+    
+     <div class="sidebar-header">
+        <h3>Grades with Subject</h3>
+     </div>
+     <ul class="lisst-unstyled components">
+        <li class="active">
+            <a href="#kinder" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Kindergarten</a>
+          <ul class="collapse list-unstyled" id="kinder">
+            <li>
+                <a href="#" role="tab" class="collapsed" data-toggle="collapse" data-target="#kinder-english">English</a>
+            </li>
+            <li>
+                <a href="#" role="tab" class="collapsed" data-toggle="collapse" data-target="#kinder-science">Science</a>
+            </li>
+            <li>
+                <a href="#" role="tab" class="collapsed" data-toggle="collapse" data-target="#kinder-maths">Maths</a>
+            </li>
+
+          </ul>
+        </li>
+        <li>
+            <a href="#grade1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Grade 1</a>
+            <ul class="collapse list-unstyled" id="grade1">
+                <li>
+                    <a href="#" role="tab" class="collapsed" data-toggle="collapse" data-target="#first-science">Science</a>
+                </li>
+                <li>
+                    <a href="#" role="tab" class="collapsed" data-toggle="collapse" data-target="#first-english">English</a>
+                </li>
+                <li>
+                    <a href="#" role="tab" class="collapsed" data-toggle="collapse" data-target="#first-maths">Maths</a>
+                </li>
+                
+
+            </ul>
+        </li>
+
+        <li>
+            <a href="#grade2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Grade 2</a>
+            <ul class="collapse list-unstyled" id="grade2">
+                <li>
+                    <a href="#" role="tab" class="collasped" data-toggle="collapse" data-target="#second-science">Science</a>
+                </li>
+                <li>
+                    <a href="#" role="tab" class="collasped" data-toggle="collapse" data-target="#second-english">English</a>
+                </li>
+                <li>
+                    <a href="#" role="tab" class="collasped" data-toggle="collapse" data-target="#second-maths">Maths</a>
+                </li>
+                
+
+            </ul>
+       <li>
+            <a href="#grade3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Grade 3</a>
+            <ul class="collapse list-unstyled" id="grade3">
+                <li>
+                    <a href="#" role="tab" class="collasped" data-toggle="collapse" data-target="#third-science">Science</a>
+                </li>
+                <li>
+                    <a href="#" role="tab" class="collasped" data-toggle="collapse" data-target="#third-english">English</a>
+                </li>
+                <li>
+                    <a href="#" role="tab" class="collasped" data-toggle="collapse" data-target="#third-maths">Maths</a>
+                </li>
+                
+
+            </ul>
+        </li>
+        <li> <a href="#coloring" data-toggle="collapse" aria-expanded="false" data-target="#color-page">Coloring</a>
+
+     </ul>
+ </nav>
+
+
+<div id="content">
+    
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <button type="button" id="sidebarCollapse" class="btn  btn-info btn-sm">
+            <i class="fa fa-align-left"></i>
+            <span></span>
+            
+        </button>
+    </div>
+      </nav>
+
+<br><br>
+ <div id="accordion">
+    
+      <div data-parent="#accordion" class="collapse show" id="kinder-english">
+             <h3 class="text-center">Alphabets Tracing Worksheet</h3>
+                <table>
+                    <tr>
+                        <td>
+                        <div class="img-fluid rounded">
+                        <img src="images/kindergarten/eng/english1.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/kindergarten/eng/english2.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/kindergarten/eng/tracing-v.jpg" height="200" width="200">
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/kindergarten/eng/tracing-d.jpg" height="200" width="200"> 
+                        </div></td></tr>
+
+                        <tr>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/kindergarten/eng/tracing-alphabets.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/kindergarten/eng/tracing-a.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/kindergarten/eng/tracing-b.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/kindergarten/eng/tracing-k.jpg" height="200" width="200"> 
+                        </div></td></tr>
+                </table>
+        </div>
+
+        <div data-parent="#accordion" class="collapse" id="kinder-science">
+             <h3 class="text-center"> Science worksheets for kindergarten</h3>
+             <table>
+                    <tr>
+                        <td>
+                        <div class="img-fluid rounded">
+                        <img src="images/kindergarten/science/science1.gif" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/kindergarten/science/science2.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/kindergarten/science/science3.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/kindergarten/science/science4.jpg" height="200" width="200"> 
+                        </div></td></tr>
+
+                        <tr>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/kindergarten/science/science5.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/kindergarten/science/science6.png" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/kindergarten/science/science7.png" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/kindergarten/science/science8.jpg" height="200" width="200"> 
+                        </div></td></tr>
+                </table>
+            </div>
+
+               <div data-parent="#accordion" class="collapse" id="kinder-maths">
+             <h3 class="text-center"> Number worksheets </h3>
+             <table>
+                    <tr>
+                        <td>
+                        <div class="img-fluid rounded">
+                        <img src="images/kindergarten/math/math1.png" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/kindergarten/math/math2.png" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/kindergarten/math/math3.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/kindergarten/math/math4.png" height="200" width="200"> 
+                        </div></td></tr>
+
+                        <tr>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/kindergarten/math/math5.gif" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/kindergarten/math/math6.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/kindergarten/math/math7.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/kindergarten/math/math8.jpg" height="200" width="200"> 
+                        </div></td></tr>
+                </table>
+            </div>
+
+               <div data-parent="#accordion" class="collapse" id="first-english">
+             <h3 class="text-center">English Worksheets</h3>
+             <table>
+                    <tr>
+                        <td>
+                        <div class="img-fluid rounded">
+                        <img src="images/grade1/English/eng1.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/grade1/English/eng2.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/grade1/English/eng3.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/grade1/English/eng4.jpg" height="200" width="200"> 
+                        </div></td></tr>
+
+                        <tr>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade1/English/eng5.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade1/English/eng6.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade1/English/eng7.gif" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade1/English/eng8.jpg" height="200" width="200"> 
+                        </div></td></tr>
+                </table>
+            </div>
+
+               <div data-parent="#accordion" class="collapse" id="first-science">
+             <h3 class="text-center"> Science Worksheet </h3>
+             <table>
+                    <tr>
+                        <td>
+                        <div class="img-fluid rounded">
+                        <img src="images/grade1/Science/science1.png" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/grade1/Science/science2.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/grade1/Science/science3.png" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/grade1/Science/science4.jpg" height="200" width="200"> 
+                        </div></td></tr>
+
+                        <tr>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade1/Science/science5.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade1/Science/science6.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade1/Science/science7.gif" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade1/Science/science8.png" height="200" width="200"> 
+                        </div></td></tr>
+                </table>
+            </div>
+
+
+            <div data-parent="#accordion" class="collapse" id="first-maths">
+             <h3 class="text-center"> Maths Worksheet </h3>
+             <table>
+                    <tr>
+                        <td>
+                        <div class="img-fluid rounded">
+                        <img src="images/grade1/Math/maths1.jpg" height="200" width="200">
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/grade1/Math/maths2.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/grade1/Math/maths3.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/grade1/Math/maths4.png" height="200" width="200"> 
+                        </div></td></tr>
+
+                        <tr>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade1/Math/maths5.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade1/Math/maths6.png" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade1/Math/maths7.png" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade1/Math/maths8.gif" height="200" width="200"> 
+                        </div></td></tr>
+                </table>
+            </div>
+
+            <div data-parent="#accordion" class="collapse" id="second-science">
+             <h3 class="text-center"> Science Worksheet </h3>
+             <table>
+                    <tr>
+                        <td>
+                        <div class="img-fluid rounded">
+                        <img src="images/grade2/Science/science1.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/grade2/Science/science2.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/grade2/Science/science3.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/grade2/Science/science4.jpg" height="200" width="200"> 
+                        </div></td></tr>
+
+                        <tr>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade2/Science/science5.gif" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade2/Science/science6.gif" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade2/Science/science7.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade2/Science/science8.jpg" height="200" width="200"> 
+                        </div></td></tr>
+                </table>
+            </div>
+
+            <div data-parent="#accordion" class="collapse" id="second-english">
+             <h3 class="text-center">English Worksheet</h3>
+             <table>
+                    <tr>
+                        <td>
+                        <div class="img-fluid rounded">
+                        <img src="images/grade2/English/english1.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/grade2/English/english2.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/grade2/English/english3.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/grade2/English/english4.jpg" height="200" width="200"> 
+                        </div></td></tr>
+
+                        <tr>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade2/English/english5.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade2/English/english6.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade2/English/english7.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade2/English/english8.jpg" height="200" width="200"> 
+                        </div></td></tr>
+                </table>
+            </div>
+
+            <div data-parent="#accordion" class="collapse" id="second-maths">
+             <h3 class="text-center"> Maths Worksheet </h3>
+             <table>
+                    <tr>
+                        <td>
+                        <div class="img-fluid rounded">
+                        <img src="images/grade2/Math/math1.png" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/grade2/Math/math2.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/grade2/Math/math3.png" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/grade2/Math/math4.png" height="200" width="200"> 
+                        </div></td></tr>
+
+                        <tr>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade2/Math/math5.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade2/Math/math6.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade2/Math/math7.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade2/Math/math8.jpg" height="200" width="200"> 
+                        </div></td></tr>
+                </table>
+            </div>
+
+            <div data-parent="#accordion" class="collapse" id="third-science">
+             <h3 class="text-center"> Science Worksheets </h3>
+             <table>
+                    <tr>
+                        <td>
+                        <div class="img-fluid rounded">
+                        <img src="images/grade3/Science/science1.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/grade3/Science/science2.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/grade3/Science/science3.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/grade3/Science/science4.jpg" height="200" width="200"> 
+                        </div></td></tr>
+
+                        <tr>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade3/Science/science5.jpeg" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade3/Science/science6.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade3/Science/science7.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade3/Science/science8.gif" height="200" width="200"> 
+                        </div></td></tr>
+                </table>
+            </div>
+
+            <div data-parent="#accordion" class="collapse" id="third-english">
+             <h3 class="text-center"> English Worksheet </h3>
+             <table>
+                    <tr>
+                        <td>
+                        <div class="img-fluid rounded">
+                        <img src="images/grade3/English/english1.jpeg" height="200" width="200">
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/grade3/English/english2.png" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/grade3/English/english3.png" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/grade3/English/english4.jpg" height="200" width="200"> 
+                        </div></td></tr>
+
+                        <tr>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade3/English/english5.webp" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade3/English/english6.png" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade3/English/english7.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade3/English/english8.png" height="200" width="200"> 
+                        </div></td></tr>
+                </table>
+            </div>
+
+            <div data-parent="#accordion" class="collapse" id="third-maths">
+             <h3 class="text-center"> Maths worksheets </h3>
+             <table>
+                    <tr>
+                        <td>
+                        <div class="img-fluid rounded">
+                        <img src="images/grade3/Math/math1.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/grade3/Math/math2.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/grade3/Math/math3.gif" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/grade3/Math/math4.jpg" height="200" width="200"> 
+                        </div></td></tr>
+
+                        <tr>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade3/Math/math5.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade3/Math/math6.gif" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade3/Math/math7.png" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/grade3/Math/math8.jpg" height="200" width="200"> 
+                        </div></td></tr>
+                </table>
+            </div>
+
+            <div data-parent="#accordion" class="collapse" id="color-page">
+             <h3 class="text-center"> Colorings Images </h3>
+             <table>
+                    <tr>
+                        <td>
+                        <div class="img-fluid rounded">
+                        <img src="images/coloring-images/characters/barbie.jpeg" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/coloring-images/characters/batman.gif" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/coloring-images/characters/hulk.png" height="200" width="200"> 
+                        </div></td>
+                        <td><div class="img-fluid rounded">
+                            <img src="images/coloring-images/characters/pooh.jpg" height="200" width="200"> 
+                        </div></td></tr>
+
+                        <tr>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/coloring-images/natures/dino.jpg" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/coloring-images/natures/turtle.png" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/coloring-images/natures/house.png" height="200" width="200"> 
+                        </div></td>
+                        <td>
+                        <div class="img-fluid rounded">
+                            <img src="images/coloring-images/halloween/pumpkin.png" height="200" width="200"> 
+                        </div></td></tr>
+                </table>
+            </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+<footer class="page-footer bg-dark">
+
+    <div class="bg-success">
+        <div class="container">
+            <div class="row py-4 d-flex align-items-center">
+
+                <div class="col-md-12 text-center">
+                    <a href="#"><i class="fa fa-facebook-square text-white mr-4"></i></a>
+                    <a href="#"><i class="fa fa-google-plus text-white mr-4"></i></a>
+                    <a href="#"><i class="fa fa-twitter text-white mr-4"></i></a>
+                    <a href="#"><i class="fa fa-linkedin text-white mr-4"></i></a>
+                    <a href="#"><i class="fa fa-instagram text-white mr-4"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center text-white text-md-left mt-5">
+        <div class="row">
+
+            <div class="col-md-3 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">Education & Entertainment</h6>
+                <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width:175px; height:2px;">
+                <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+            </div>
+
+            <div class="col-md-3 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">Subjects</h6>
+                <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 85px; height:2px;">
+
+                <ul class="list-unstyled">
+                    <li class="my-2">Science</li>
+                    <li class="my-2">Phonetics</li>
+                    <li class="my-2">Maths</li>
+                    <li class="my-2">Rhymes</li>
+                </ul>
+
+            </div>
+
+            <div class="col-md-3 mx-auto mb-4">
+                <h6 class="text-uppercase font-weight-bold">Contacts</h6>
+                <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 75px; height:2px;">
+
+                <ul class="list-unstyled text-white">
+                    <li class="my-2"><i class="fa fa-home"></i> lorem, Ave 23 ipsum</li>
+                    <li class="my-2"><i class="fa fa-envelope"></i> eduentu@gmail.com</li>
+                    <li class="my-2"><i class="fa fa-phone"></i> +19807649873</li>
+                    <li class="my-2"><i class="fa fa-print"></i> +80123456789</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright text-center text-white py-3">
+        <p>&copy; Copyright
+            <a href="#">theeduentu.com</a></p>
+            <p> Designed By Developers</p>
+    </div>
+</footer>
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+     <script src="js/scripts.js"></script>
+     <!-- endbuild -->
+</body>
+</html>
